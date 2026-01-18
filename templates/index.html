@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css'%} ">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css'%}?v=1.1">
 <link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
 </head>
 <body>
@@ -28,17 +28,17 @@
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
 						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
-							<div class="logo"><a href="index.html">Travello</a></div>
+							<div class="logo"><a href="{% url 'index' %}">Travello</a></div>
 							<nav class="main_nav">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
-									<li class="active"><a href="index.html">Home</a></li>
+									<li class="active"><a href="{% url 'index' %}">Home</a></li>
 									<li><a href="contact.html">Contact</a></li>
 									{% if user.is_authenticated %}
-									<li>Hello,{{user.first_name}}</li>
-									<li><a href="http://localhost:8000/account/logout">logout</a></li>
+									<li><a href="#">Hello,{{user.first_name}}</a></li>
+									<li><a href="{% url 'logout' %}">logout</a></li>
 									{%else%}
-									<li><a href="http://localhost:8000/account/register">register</a></li>
-									<li><a href="http://localhost:8000/account/login">login</a></li>
+									<li><a href="{% url 'register' %}">register</a></li>
+									<li><a href="{% url 'login' %}">login</a></li>
 									{%endif%}
 								</ul>
 							</nav>

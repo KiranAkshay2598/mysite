@@ -1,0 +1,21 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media/
+
+# Virtual environment
+myenv/
+venv/
+env/
+.env
+
+# VS Code
+.vscode/
+
+# Static files (if you collect them to 'assets' or 'static_root')
+# but keep your source static files!
+mysite/assets/

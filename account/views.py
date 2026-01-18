@@ -14,7 +14,7 @@ def login(request):
 
         if  user is not None:
             auth.login(request, user)
-            return redirect('http://localhost:8000/travello/home')
+            return redirect('index')
 
         else:
             messages.info(request, 'invalid credentials')
@@ -25,12 +25,12 @@ def login(request):
 def register(request):
 
     if request.method == 'POST':
-        first_name=request.POST['first_name']
-        last_name=request.POST['last_name']
-        username=request.POST['username']
-        email=request.POST['email']
-        password1=request.POST['password1']
-        password2=request.POST['password2']
+        first_name=request.POST.get('first_name')
+        last_name=request.POST.get('last_name')
+        username=request.POST.get('username')
+        email=request.POST.get('email')
+        password1=request.POST.get('password1')
+        password2=request.POST.get('password2')
 
         
         if password1 == password2:
@@ -44,18 +44,16 @@ def register(request):
             
             else:
                 user = User.objects.create_user(username=username, password=password1, email=email, first_name=first_name, last_name=last_name)
-                user.save();
-                print('user_created')
+                user.save()
                 return redirect('login')
 
         else:
             messages.info(request,"password not matching")
             return redirect('register')
-        return redirect('http://localhost:8000/travello/home')
         
     elif request.method == 'GET':
         return render(request,'register.html')
 
 def logout(request):
-    auth.logout(request);
-    return redirect('http://localhost:8000/travello/home')
+    auth.logout(request)
+    return redirect('index')
