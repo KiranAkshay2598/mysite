@@ -11,6 +11,7 @@ This project encapsulates basic beginner tasks to understand:
 - **Django Template Language (DTL)**: Rendering dynamic data in HTML.
 - **Authentication**: A basic Login/Logout flow to understand session management.
 - **Middleware**: Custom implementation to handle request processing globally (e.g., URL redirection).
+- **Calculator Flow**: A simple form-based interaction to demonstrate request handling and data processing in views.
 
 ## 🛠️ Tech Stack
 
@@ -22,10 +23,18 @@ This project encapsulates basic beginner tasks to understand:
 ## 📂 Project Structure
 
 This is a standard Django project structure:
-- `account/`: Handles user authentication views and logic.
-- `mysite/`: Main project configuration, settings, and **custom middleware**.
+- `account/`: Handles user authentication views (Login/Logout) and registration logic.
+- `mysite/`: The project core.
+    - `settings.py`: Main configuration (Database, Middleware, Static files).
+    - `urls.py`: Main URL routing.
+    - `middleware.py`: Custom `ParseHostMiddleware`.
+- `polls/`: A sample app demonstrating a basic calculation flow.
+    - Includes a simple HTML form (`home.html`) that accepts two numbers and displays the result, teaching basic request handling (`POST` method).
+- `travello/`: An app handling the main homepage logic with dynamic content rendering.
 - `templates/`: HTML templates using DTL. **Note:** These templates are sourced online; the learning focus is on manipulating them dynamically using **DTL (Django Template Language)**.
-- `static/`: CSS, JS, and images.
+- `static/`: Static assets (CSS, JS, images, plugins) serving the frontend.
+- `media/`: Handles user-uploaded content (configured but currently unused).
+- `manage.py`: Django's command-line utility for administrative tasks.
 
 ## 🚀 Getting Started
 
