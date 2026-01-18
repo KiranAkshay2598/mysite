@@ -1,6 +1,6 @@
 # Django Beginner Learning Project
 
-This is my very first learning project designed to understand the core concepts of web development with Django. The primary focus of this project is on the **Backend (BE)**, understanding how data flows through the application, and how Django handles requests and responses.
+This is my very first learning project (created in 2020) designed to understand the core concepts of web development with Django. The primary focus of this project is on the **Backend (BE)**, understanding how data flows through the application, and how Django handles requests and responses.
 
 It serves as a playground to explore the **MVT (Model-View-Template)** architecture, **Django Template Language (DTL)**, and custom **Middleware**.
 
