@@ -87,9 +87,9 @@ Follow these steps to set up the project locally.
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'mysite_db', # Match the name of the DB created above
-            'USER': 'postgres',
-            'PASSWORD': 'your_password',
+            'NAME': 'your_db_name', # Match the name of the DB created above
+            'USER': 'your_db_user',  # Your PostgreSQL username (usually 'postgres')
+            'PASSWORD': 'your_db_password', # Your PostgreSQL password
             'HOST': 'localhost'
         }
     }
