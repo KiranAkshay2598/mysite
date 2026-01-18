@@ -76,8 +76,8 @@ Follow these steps to set up the project locally.
         Inside the SQL shell, run:
         ```sql
         CREATE DATABASE mysite_db;
-        \q
         ```
+        Then exit the shell with `\q`.
 
     *   **Configure Settings:**
         Open `mysite/settings.py` and check the `DATABASES` configuration. Update the `NAME`, `USER`, and `PASSWORD` to match your local PostgreSQL configuration.
