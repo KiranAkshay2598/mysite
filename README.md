@@ -17,14 +17,14 @@ This project encapsulates basic beginner tasks to understand:
 - **Python**: 3.x
 - **Django**: 3.1
 - **Database**: PostgreSQL
-- **Frontend**: Basic HTML/CSS/Bootstrap (Focus is on backend logic)
+- **Frontend**: Basic HTML/CSS/Bootstrap (Templates downloaded from online resources; focus is on backend integration).
 
 ## 📂 Project Structure
 
 This is a standard Django project structure:
 - `account/`: Handles user authentication views and logic.
 - `mysite/`: Main project configuration, settings, and **custom middleware**.
-- `templates/`: HTML templates using DTL.
+- `templates/`: HTML templates using DTL. **Note:** These templates are sourced online; the learning focus is on manipulating them dynamically using **DTL (Django Template Language)**.
 - `static/`: CSS, JS, and images.
 
 ## 🚀 Getting Started
