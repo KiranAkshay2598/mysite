@@ -117,5 +117,4 @@ Follow these steps to set up the project locally.
 ## ⚙️ Middleware Feature
 This project includes a custom middleware (`ParseHostMiddleware`) that enforces the use of `localhost` over `127.0.0.1` for consistency. If you access the site via IP, it will automatically redirect you to the localhost domain.
 
-## 🤝 Contributing
-Since this is a learning project, suggestions and tips on Best Practices are welcome!
+
