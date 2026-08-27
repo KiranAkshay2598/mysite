@@ -4,7 +4,7 @@ This is my very first learning project (created in 2020) designed to understand 
 
 It serves as a playground to explore the **MVT (Model-View-Template)** architecture, **Django Template Language (DTL)**, and custom **Middleware**.
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 This project encapsulates basic beginner tasks to understand:
 - **Django MVT Structure**: How Models, Views, and Templates interact.
@@ -13,14 +13,14 @@ This project encapsulates basic beginner tasks to understand:
 - **Middleware**: Custom implementation to handle request processing globally (e.g., URL redirection).
 - **Calculator Flow**: A simple form-based interaction to demonstrate request handling and data processing in views.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python**: 3.x
 - **Django**: 3.1
 - **Database**: PostgreSQL
 - **Frontend**: Basic HTML/CSS/Bootstrap (Templates downloaded from online resources; focus is on backend integration).
 
-## 📂 Project Structure
+## Project Structure
 
 This is a standard Django project structure:
 - `account/`: Handles user authentication views (Login/Logout) and registration logic.
@@ -36,7 +36,7 @@ This is a standard Django project structure:
 - `media/`: Handles user-uploaded content (configured but currently unused).
 - `manage.py`: Django's command-line utility for administrative tasks.
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up the project locally.
 
@@ -114,7 +114,5 @@ Follow these steps to set up the project locally.
 
     Access the application at `http://localhost:8000`.
 
-## ⚙️ Middleware Feature
+## Middleware Feature
 This project includes a custom middleware (`ParseHostMiddleware`) that enforces the use of `localhost` over `127.0.0.1` for consistency. If you access the site via IP, it will automatically redirect you to the localhost domain.
-
-
